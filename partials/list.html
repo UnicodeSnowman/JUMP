@@ -1,0 +1,15 @@
+<div class="modal">
+  <div class="list" ng-controller="ListCtrl">
+    <div class="search">
+      <label>Search</label>
+      <input type="search">
+    </div>
+    <div class="items">
+      <div class="item" ng-repeat="team in teams">
+        <h1 class="state">{{team.location}}</h1>
+        <h2 class="name">{{team.name}}</h2>
+        <p>{{team.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
