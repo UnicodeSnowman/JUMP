@@ -2,6 +2,9 @@
     height: 100px;
     padding-top: 25px;
     background: #231f20;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 .top-bar ul {
@@ -62,12 +65,14 @@ body {
 .modal {
     background: #231f20;
     position: absolute;
+    z-index: 999;
     top: 100px;
     right: 60px;
     width: 400px;
-    //height: 600px;
+    height: 600px;
     opacity: 0.8;
     color: white;
+    overflow-y: scroll;
 }
 
 .modal .form {

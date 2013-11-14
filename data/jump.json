@@ -1,17 +1,540 @@
 [
-    {
-        "name": "Douche Jumpers",
-        "location": "Texas",
-        "website": "http://www.douche.com"
-    },
-    {
-        "name": "Jumpin' Jack Douche",
-        "location": "Ohio",
-        "website": "http://www.jjd.com"
-    },
-    {
-        "name": "Where's the Douche?",
-        "location": "Maryland",
-        "website": "http://www.wtd.com"
-    }
+   {
+      "name":"Bainbridge Island Rope Skippers",
+      "location":{
+         "city":"Bainbridge Island",
+         "state":"WA",
+         "zip":"98110",
+         "lat":47.65526,
+         "lng":-122.535086
+      },
+      "url":"",
+      "contact":"Bonnie Bakeman Harrison",
+      "email":"BIRopeSkippers@hotmail.com",
+      "phone":"206-842-2873"
+   },
+   {
+      "name":"Brewster Bayside Skippers",
+      "location":{
+         "city":"Brewster",
+         "state":"MA",
+         "zip":"02631",
+         "lat":41.760109,
+         "lng":-70.082796
+      },
+      "url":"www.brewsterbaysideskippers.com",
+      "contact":"John Hammond",
+      "email":"jhnf.hammond@gmail.com",
+      "phone":" 508-237-1119"
+   },
+   {
+      "name":"Cardinal Skippers",
+      "location":{
+         "city":"Fond du Lac",
+         "state":"WI",
+         "zip":"54937",
+         "lat":43.777669,
+         "lng":-88.446951
+      },
+      "url":"",
+      "contact":"CC Krolczyk",
+      "email":"krolczykc@fonddulac.k12.wi.us",
+      "phone":""
+   },
+   {
+      "name":"Cary Superskippers",
+      "location":{
+         "city":"Raleigh",
+         "state":"NC",
+         "zip":"27607",
+         "lat":35.780402,
+         "lng":-78.639078
+      },
+      "url":"www.superskippers.org",
+      "contact":"Gary Anderson",
+      "email":"superskipper@gmail.com",
+      "phone":"919-244-1236"
+   },
+   {
+      "name":"Claim Jumpers",
+      "location":{
+         "city":"Littleton",
+         "state":"CO",
+         "lat":39.541382,
+         "lng":-105.10346
+      },
+      "url":"www.cjumpers.com",
+      "contact":"Jessah Comstock",
+      "email":"jessah@cjumpers.com",
+      "phone":"720-519-6643"
+   },
+   {
+      "name":" Comet Skippers",
+      "location":{
+         "city":"Mason",
+         "state":"OH",
+         "zip":"45040",
+         "lat":39.360059,
+         "lng":-84.309939
+      },
+      "url":"www.cometskippers.org",
+      "contact":"Carmen Simpson",
+      "email":"ccsimpson@cinci.rr.com",
+      "phone":"513-398-9096"
+   },
+   {
+      "name":"Forbes Flyers",
+      "location":{
+         "city":"Torrington",
+         "state":"CT",
+         "zip":"06790",
+         "lat":41.834958,
+         "lng":-73.127566
+      },
+      "url":"www.forbesflyers.org",
+      "contact":"Janice Harrington",
+      "email":"jan1tony2@comcast.net",
+      "phone":"860-305-7744  "
+   },
+   {
+      "name":"Greenbelt S.I.T.Y. Stars",
+      "location":{
+         "city":"Greenbelt",
+         "state":"MD",
+         "zip":"20770",
+         "lat":39.004554,
+         "lng":-76.875528
+      },
+      "url":"www.greenbeltsitystars.org/",
+      "contact":"Kim Bradshaw",
+      "email":"coachkim@greenbeltsitystars.com",
+      "phone":"301-503-6962"
+   },
+   {
+      "name":"Heart 'n Soul",
+      "location":{
+         "city":"Baton Rouge",
+         "state":"LA",
+         "zip":"70810",
+         "lat":30.450746,
+         "lng":-91.154551
+      },
+      "url":"www.heartnsouljumprope.org",
+      "contact":"Ann Couvillion",
+      "email":"heartnsoulcoach@cox.net",
+      "phone":"225-937-3989"
+   },
+   {
+      "name":"Heartbeats",
+      "location":{
+         "city":"Strongsville",
+         "state":"OH",
+         "zip":"44136",
+         "lat":41.314473,
+         "lng":-81.83511
+      },
+      "url":"www.theheartbeats.org",
+      "contact":"Pam Evans",
+      "email":"messageforpam@gmail.com",
+      "phone":"440-572-3292"
+   },
+   {
+      "name":"HFS Jump Force",
+      "location":{
+         "city":"Fort Worth",
+         "state":"TX",
+         "lat":32.623716,
+         "lng":-97.278222
+      },
+      "url":"www.hfsjumpforce.org",
+      "contact":"Devin Young",
+      "email":"young.devin0@gmail.com",
+      "phone":"817-527-1262"
+   },
+   {
+      "name":"High Velocity Jump Rope Team",
+      "location":{
+         "city":"Montgomery",
+         "state":"TX",
+         "zip":"77356",
+         "lat":30.392521,
+         "lng":-95.697374
+      },
+      "url":"",
+      "contact":"Tim Rader",
+      "email":"coachrader@sbcglobal.net",
+      "phone":""
+   },
+   {
+      "name":"Highflyers",
+      "location":{
+         "city":"Katy",
+         "state":"TX",
+         "zip":"77450",
+         "lat":29.79293,
+         "lng":-95.829665
+      },
+      "url":"www.highflyersjumpropeteam.org",
+      "contact":"David Cazares",
+      "email":"d.cazares@sbcglobal.net",
+      "phone":"832-444-5375"
+   },
+   {
+      "name":"Hoppin' Hawks",
+      "location":{
+         "city":"Churchville",
+         "state":"MD",
+         "zip":"21028",
+         "lat":39.561219,
+         "lng":-76.245512
+      },
+      "url":"www.hoppinhawks.org",
+      "contact":"Megan Reith or Sheri Billings",
+      "email":"hoppin_hawks@yahoo.com",
+      "phone":""
+   },
+   {
+      "name":"Hot Shots TN",
+      "location":{
+         "city":"Franklin",
+         "state":"TN",
+         "zip":"37069",
+         "lat":35.925081,
+         "lng":-86.868832
+      },
+      "url":"",
+      "contact":"Lisa Arnold",
+      "email":"hot_shots@comcast.net",
+      "phone":"615-218-1467"
+   },
+   {
+      "name":"HT High Flyers",
+      "location":{
+         "city":"Ligonier",
+         "state":"PA",
+         "zip":"15658",
+         "lat":40.243128,
+         "lng":-79.237532
+      },
+      "url":"https://www.facebook.com/pages/HT-High-Flyers/124825290917234",
+      "contact":"Laurie Whitsel",
+      "email":"laurie.whitsel@heart.org",
+      "phone":"724-238-0271"
+   },
+   {
+      "name":"Indy Air Bears",
+      "location":{
+         "city":"Indianapolis",
+         "state":"IN",
+         "zip":"46237",
+         "lat":39.76838,
+         "lng":-86.158045
+      },
+      "url":"www.indyairbears.org",
+      "contact":"Niki Glover",
+      "email":"Indyairbears@aol.com",
+      "phone":"317-501-5590"
+   },
+   {
+      "name":"Jammin' Jumpers",
+      "location":{
+         "city":"Wadsworth",
+         "state":"OH",
+         "zip":"44281",
+         "lat":41.02561,
+         "lng":-81.729852
+      },
+      "url":"www.jamminjumpers.org",
+      "contact":"Anita Gabel",
+      "email":" jamminjumpers98@gmail.com",
+      "phone":"330-612-3849"
+   },
+   {
+      "name":"Jump Company USA",
+      "location":{
+         "city":"Vienna",
+         "state":"WV",
+         "zip":"26105",
+         "lat":39.327019,
+         "lng":-81.548458
+      },
+      "url":"www.jumpcompanyusa.com",
+      "contact":"Rochelle Boggs",
+      "email":"jumpkickrboggs@hotmail.com",
+      "phone":"304-615-5168"
+   },
+   {
+      "name":"Jumpin' Allstars",
+      "location":{
+         "city":"Brighton",
+         "state":"MI",
+         "zip":"48116",
+         "lat":42.531676,
+         "lng":-83.784449
+      },
+      "url":"www.jumpinallstars.org",
+      "contact":"Renee' Nix",
+      "email":"jumpinallstars@yahoo.com",
+      "phone":"810-772-6566"
+   },
+   {
+      "name":"Jumpin' Jaguars",
+      "location":{
+         "city":"Bowling Green",
+         "state":"KY",
+         "zip":"42104",
+         "lat":36.99032,
+         "lng":-86.443602
+      },
+      "url":"",
+      "contact":"Vickie Odil",
+      "email":"vodil@twc.com",
+      "phone":"270-535-3370"
+   },
+   {
+      "name":"Jumping Coyotes",
+      "location":{
+         "city":"La Palma",
+         "state":"CA",
+         "lat":33.846404,
+         "lng":-118.046731
+      },
+      "url":"",
+      "contact":"Rich Neder",
+      "email":"jumpingcoyotes@aol.com",
+      "phone":""
+   },
+   {
+      "name":"Jumping Eagles",
+      "location":{
+         "city":"Littleton",
+         "state":"CO",
+         "zip":"80127",
+         "lat":39.541382,
+         "lng":-105.10346
+      },
+      "url":"www.jumpingeagles.org",
+      "contact":"E.J. Boillot",
+      "email":"Eboillot2010@gmail.com",
+      "phone":"720-299-7001"
+   },
+   {
+      "name":"Juneau Jumpers",
+      "location":{
+         "city":"Juneau",
+         "state":"AK",
+         "zip":"99803",
+         "lat":58.264167,
+         "lng":-134.330178
+      },
+      "url":"www.juneaujumpers.org",
+      "contact":"Karen Ross",
+      "email":"vkross02@alaska.net",
+      "phone":"907-321-8987"
+   },
+   {
+      "name":"Kangaroo Kids ",
+      "location":{
+         "city":"Simpsonville",
+         "state":"MD",
+         "zip":"21150",
+         "lat":39.186774,
+         "lng":-76.881919
+      },
+      "url":"http://www.kangarookids.org",
+      "contact":"Cindy Bork",
+      "email":"kangarookids1@gmail.com",
+      "phone":"301-490-4995"
+   },
+   {
+      "name":"Mad Hops",
+      "location":{
+         "city":"Louisville",
+         "state":"CO",
+         "lat":39.977763,
+         "lng":-105.13193
+      },
+      "url":"www.jumpnrope.com/madhops",
+      "contact":"Tucker can Leuwen-Hall",
+      "email":"tucker@jumpnrope.com",
+      "phone":"303-681-7102"
+   },
+   {
+      "name":"Mars Stars",
+      "location":{
+         "city":"Mars",
+         "state":"PA",
+         "zip":"16046",
+         "lat":40.6959,
+         "lng":-80.011725
+      },
+      "url":"www.marsstarsjumprope.org",
+      "contact":"Pam Best",
+      "email":"marsstarsjumprope@gmail.com",
+      "phone":""
+   },
+   {
+      "name":"Montana Super Skippers",
+      "location":{
+         "city":"Missoula",
+         "state":"MT",
+         "zip":"59808",
+         "lat":46.879544,
+         "lng":-113.921434
+      },
+      "url":"www.montanasuperskippers.com",
+      "contact":"Beverly Williams",
+      "email":"",
+      "phone":""
+   },
+   {
+      "name":"Ohio State Jump Rope",
+      "location":{
+         "city":"Columbus",
+         "state":"OH",
+         "zip":"43215",
+         "lat":39.96226,
+         "lng":-83.000706
+      },
+      "url":"https://www.facebook.com/pages/Ohio-State-Jump-Rope/232150620243250",
+      "contact":"Tori Boggs",
+      "email":"boggs.1073@osu.edu",
+      "phone":""
+   },
+   {
+      "name":"One Jump Ahead",
+      "location":{
+         "city":"Colorado Springs",
+         "state":"CO",
+         "zip":"80919",
+         "lat":38.833882,
+         "lng":-104.821363
+      },
+      "url":"www.woodmanvalley.org",
+      "contact":"Lindsey Wallace",
+      "email":"Jump_to_it@hotmail.com",
+      "phone":"303-818-0019"
+   },
+   {
+      "name":"Pouncing Panthers Jump Rope Team",
+      "location":{
+         "city":"Stonington",
+         "state":"CT",
+         "zip":"06378",
+         "lat":41.335933,
+         "lng":-71.905904
+      },
+      "url":"www.pinepoint.org/jump",
+      "contact":"Judy Davis",
+      "email":"jdavis@pinepoint.org",
+      "phone":"860-535-0606"
+   },
+   {
+      "name":"Proform Airborne",
+      "location":{
+         "city":"Ammon",
+         "state":"ID",
+         "zip":"83406",
+         "lat":43.476292,
+         "lng":-111.969302
+      },
+      "url":"www.proformairborne.org",
+      "contact":"Monica Foster",
+      "email":"proformairborne@hotmail.com",
+      "phone":"208-709-0869"
+   },
+   {
+      "name":"SkipSations!",
+      "location":{
+         "city":"Chapel Hill",
+         "state":"NC",
+         "zip":"27516",
+         "lat":35.9132,
+         "lng":-79.055844
+      },
+      "url":"www.skipsations.org",
+      "contact":"Lucy Schimmelfing",
+      "email":"lucyschim@gmail.com",
+      "phone":"919-918-7717"
+   },
+   {
+      "name":"Sol Jumpers",
+      "location":{
+         "city":"Santa Clara",
+         "state":"CA",
+         "lat":37.354113,
+         "lng":-121.955174
+      },
+      "url":"www.soljumpers.com",
+      "contact":"Michelle Fongson",
+      "email":"mfongson@gmail.com",
+      "phone":""
+   },
+   {
+      "name":"Summerwind Skippers",
+      "location":{
+         "city":"Boise",
+         "state":"ID",
+         "zip":"83704",
+         "lat":43.615046,
+         "lng":-116.204443
+      },
+      "url":"www.summerwindskippers.org",
+      "contact":"Kelsy Porter",
+      "email":"kelsykmp@gmail.com",
+      "phone":""
+   },
+   {
+      "name":"Supersonics",
+      "location":{
+         "city":"Miami",
+         "state":"FL",
+         "lat":25.774266,
+         "lng":-80.193659
+      },
+      "url":"",
+      "contact":"Dillon Bethel",
+      "email":"donkey_kong098@yahoo.com",
+      "phone":"305-342-1729"
+   },
+   {
+      "name":"The Shasta Skippers",
+      "location":{
+         "city":"Redding",
+         "state":"CA",
+         "lat":40.510368,
+         "lng":-122.362918
+      },
+      "url":"www.ShastaSkippers.com",
+      "contact":"Jeff Lighthall",
+      "email":"Lighthall@charter.net",
+      "phone":"530-355-0466"
+   },
+   {
+      "name":"Tri-Force Jump Rope",
+      "location":{
+         "city":"Morrisville",
+         "state":"NC",
+         "zip":"27560",
+         "lat":35.823483,
+         "lng":-78.825562
+      },
+      "url":"www.triforcejr.com",
+      "contact":"Shay Perez",
+      "email":"coachshay@triforcejr.com",
+      "phone":"919-465-3955"
+   },
+   {
+      "name":"ZZ Skippers",
+      "location":{
+         "city":"Grandview",
+         "state":"TX",
+         "lat":32.270424,
+         "lng":-97.179176
+      },
+      "url":"",
+      "contact":"Lou Ann Patterson",
+      "email":"zzskippers@gmail.com",
+      "phone":"410-858-0910"
+   }
 ]
