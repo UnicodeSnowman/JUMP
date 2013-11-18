@@ -1,3 +1,8 @@
+@font-face { 
+    font-family: TitlingGothic; 
+    src: url(TitlingGothicFBCond-Light.otf) format("opentype"); 
+} 
+
 .top-bar {
     height: 100px;
     padding-top: 25px;
@@ -8,12 +13,12 @@
 }
 
 .top-bar ul {
-    font-size: 18px;
     background: #231f20;
 }
 
 .top-bar ul.left a {
     background: #231f20;
+    font-size: 20px;
 }
 
 .top-bar ul.left a:hover {
@@ -22,8 +27,9 @@
 }
 
 .top-bar ul.right a {
-    padding-right: 80px;
+    padding-right: 70px;
     background: #231f20;
+    font-size: 20px;
 }
 
 .top-bar ul.right a:hover {
@@ -60,6 +66,7 @@
 
 body {
     color: white;
+    font-family: TitlingGothic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 body a {
@@ -83,9 +90,14 @@ body li {
     width: 400px;
     height: 600px;
     padding: 20px;
-    opacity: 0.8;
+    opacity: 0.85;
     color: white;
     overflow-y: scroll;
+}
+
+.modal .exit {
+    content: 'X';
+    position: absolute;
 }
 
 .modal .form {
@@ -106,4 +118,18 @@ body li {
 
 .modal .form input,textarea:focus {
     background: #231f20;
+}
+
+.modal .teams .team {
+    padding-bottom: 10px;
+}
+
+.modal .teams .team .name{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.modal .teams .team .location{
+    font-size: 16px;
+    line-height: 24px;
 }

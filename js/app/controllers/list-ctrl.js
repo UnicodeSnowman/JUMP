@@ -1,20 +1,12 @@
 Jump.Controllers.controller('ListCtrl', ['$scope', 'mapService', function ($scope, mapService) {
 
-    $scope.states = [];
-
-    var groupByState = _.groupBy(mapService.markers(), function (marker) {
-       return marker.data.location.state; 
+    $scope.teams = _.map(mapService.markers(), function (team) {
+        team.data.position = team.position;
+        return team.data; 
     });
 
-    angular.forEach(groupByState, function (teams, name) {
-        $scope.states.push({
-            name: name,
-            teams: teams
-        }); 
-    });
-
-    this.centerMap = function (marker) {
-        mapService.panTo(marker.position);
+    this.centerMap = function (location) {
+        mapService.zoomTo(location);
     };
 
 }]);

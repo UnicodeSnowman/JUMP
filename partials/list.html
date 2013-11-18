@@ -1,16 +1,16 @@
 <div class="modal">
   <div class="list" ng-controller="ListCtrl as listCtrl">
     <div class="search form">
-      <label>Search</label>
-      <input type="search" ng-model="searchText.name">
+      <input type="search" ng-model="searchText" placeholder="Search...">
+      <!--<a href="#" class="exit">X</a>-->
     </div>
 
     <hr>
 
     <div class="teams">
-      <div class="state" ng-repeat="state in states | filter:searchText">
-        <p>{{state.name}}</p>
-        <li ng-repeat="team in state.teams"><a ng-click="listCtrl.centerMap(team)">{{team.data.name}}</a></li>
+      <div class="team" ng-click="listCtrl.centerMap(team.position)" ng-repeat="team in teams | filter:searchText">
+        <li class="name">{{team.name}}</li>
+        <li class="location">{{team.location.city}}, {{team.location.state}}</li>
       </div>
     </div>
   </div>

@@ -29,6 +29,7 @@ Jump.Services.factory('mapService', ['$document', '$http', function ($document, 
             var marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
+                icon: 'img/marker.png',
                 title: team.name,
                 data: team
             });
@@ -42,9 +43,9 @@ Jump.Services.factory('mapService', ['$document', '$http', function ($document, 
         map.fitBounds(bounds);
     });
 
-    var _panTo = function (position) {
-        console.log('panning map to ' + position);
+    var _zoomTo = function (position) {
         map.panTo(position);
+        map.setZoom(8);
     };
 
     return {
@@ -52,7 +53,7 @@ Jump.Services.factory('mapService', ['$document', '$http', function ($document, 
         markers: function () {
             return markers;
         },
-        panTo: _panTo
+        zoomTo: _zoomTo
     }
 }]);
 
