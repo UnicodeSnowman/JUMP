@@ -1,9 +1,12 @@
 <div class="modal">
   <div class="list" ng-controller="ListCtrl as listCtrl">
-    <div class="search">
+    <div class="search form">
       <label>Search</label>
       <input type="search" ng-model="searchText.name">
     </div>
+
+    <hr>
+
     <div class="teams">
       <div class="state" ng-repeat="state in states | filter:searchText">
         <p>{{state.name}}</p>
