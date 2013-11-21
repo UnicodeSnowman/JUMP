@@ -3,8 +3,9 @@ var Jump = Jump || {};
 
 Jump.Controllers = angular.module('jump.controllers', []);
 Jump.Services = angular.module('jump.services', []);
+Jump.Directives = angular.module('jump.directives', []);
 
-angular.module('Jump', ['jump.controllers', 'jump.services', 'ui.router'])
+angular.module('Jump', ['jump.controllers', 'jump.services', 'jump.directives', 'ui.router'])
     .config(['$stateProvider', function ($stateProvider) {
         
         $stateProvider

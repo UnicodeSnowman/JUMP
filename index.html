@@ -27,10 +27,6 @@
         <nav class="top-bar">
           <ul class="title-area">
             <li class="name"></li>
-            <!--
-            <li class="name"><h1><a href="">J.U.M.P</a></h1></li>
-            <li class=""><a href="#">Jumpers Unite for Macy's Parade</a></li>
-            -->
           </ul>
           <section class="top-bar-section">
             <ul class="left">
@@ -38,9 +34,9 @@
               <li class=""><a href="#">Jumpers Unite for Macy's Parade</a></li>
             </ul>
             <ul class="right">
-              <li class="about"><a ui-sref="about">About Us</a></li>
-              <li class="list"><a ui-sref="list">List View</a></li>
-              <li class="contact"><a ui-sref="contact">Contact</a></li>
+              <li ng-class="{'link-with-arrow' : current == 'about'}"><a ui-sref="about">About Us</a></li>
+              <li ng-class="{'link-with-arrow' : current == 'list'}"><a ui-sref="list">List View</a></li>
+              <li ng-class="{'link-with-arrow' : current == 'contact'}"><a ui-sref="contact">Contact</a></li>
             </ul>
           </section>
         </nav>

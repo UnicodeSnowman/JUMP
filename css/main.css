@@ -48,16 +48,16 @@
     top: 35px;
 }
 
-//.top-bar ul.right li.contact:after {
-//    position: relative;
-//    border-right: 18px solid transparent;
-//    border-top: 14px solid #231f20;
-//    border-left: 18px solid transparent;
-//    z-index: 9999;
-//    content: '';
-//    left: 20%;
-//    top: 35px;
-//}
+.link-with-arrow:after {
+    position: relative;
+    border-right: 18px solid transparent;
+    border-top: 14px solid #231f20;
+    border-left: 18px solid transparent;
+    z-index: 9999;
+    content: '';
+    left: 20%;
+    top: 35px;
+}
 
 .top-bar li.name h1 {
     font-size: 28px;
