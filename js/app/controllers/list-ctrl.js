@@ -5,8 +5,8 @@ Jump.Controllers.controller('ListCtrl', ['$scope', 'mapService', function ($scop
         return team.data; 
     });
 
-    this.centerMap = function (location) {
-        mapService.zoomTo(location);
+    this.centerMap = function (marker) {
+        mapService.zoomTo(marker);
     };
 
 }]);

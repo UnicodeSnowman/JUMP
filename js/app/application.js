@@ -25,7 +25,12 @@ angular.module('Jump', ['jump.controllers', 'jump.services', 'jump.directives', 
                 templateUrl: 'partials/contact.html'
             });
     }])
-    .run(['mapService', function (mapService) {
+    .run(['mapService', '$http', '$templateCache', function (mapService, $http, $templateCache) {
+        // bootstraps the mapService by injecting it
         console.log('app started...');
+
+        $http.get('partials/popup.html').then(function (resp) {
+            $templateCache.put('popupTemplate.html', resp.data);
+        });
     }]);
 
