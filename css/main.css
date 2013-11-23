@@ -7,6 +7,7 @@
     height: 100px;
     padding-top: 25px;
     background: #231f20;
+    top: 0;
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -33,19 +34,20 @@
 }
 
 .top-bar ul.right a:hover {
-    text-decoration: underline;
+    //text-decoration: underline;
     background: #231f20;
 }
 
-.box-arrow:after {
-    position: relative;
-    border-right: 18px solid transparent;
-    border-top: 14px solid #231f20;
-    border-left: 18px solid transparent;
-    z-index: 9999;
-    content: '';
-    left: 20%;
-    top: 35px;
+.top-bar-section .right li {
+    background: #231f20;
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: #231f20;
+}
+
+.link-with-arrow:hover {
+    background: #231f20;
 }
 
 .link-with-arrow:after {
@@ -83,21 +85,26 @@ body li {
 
 .modal {
     background: #231f20;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     top: 100px;
     right: 60px;
     width: 400px;
-    height: 600px;
+    height: 500px;
     padding: 20px;
     opacity: 0.85;
     color: white;
+    //overflow-y: scroll;
+}
+
+.modal .teams {
     overflow-y: scroll;
+    height: 380px;
 }
 
 .modal .exit {
-    content: 'X';
     position: absolute;
+    right: 10px;
 }
 
 .modal .form {
@@ -124,6 +131,11 @@ body li {
     padding-bottom: 10px;
 }
 
+.modal .teams .team:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .modal .teams .team .name{
     font-size: 18px;
     line-height: 26px;
@@ -132,4 +144,51 @@ body li {
 .modal .teams .team .location{
     font-size: 16px;
     line-height: 24px;
+}
+
+.infoBox {
+    font-family: TitlingGothic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    background: #231f20;
+    opacity: 0.85;
+    width: 300px;
+    padding: 0 10px 10px 10px
+}
+
+.infoBox h1 {
+    font-family: TitlingGothic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 1.6875em;
+    color: white;
+    margin: 0px;
+}
+
+.infoBox p {
+    font-family: TitlingGothic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 3px;
+}
+
+.infoBox .close {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+.infoBox img {
+    display: none;
+}
+
+.infoBox .main {
+    border-bottom: 2px solid white;
+}
+
+.infoBox:before {
+    position: relative;
+    border-right: 18px solid transparent;
+    border-bottom: 14px solid #231f20;
+    border-left: 18px solid transparent;
+    z-index: 9999;
+    content: '';
+    right: -253px;
+    top: -22px;
 }

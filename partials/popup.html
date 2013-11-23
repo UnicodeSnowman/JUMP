@@ -1,0 +1,17 @@
+<script type="text/ng-template" id="popupTemplate.html">
+  <div class="infobox-wrapper">
+    <div class="main">
+      <h1>{{name}}</h1>
+      <p>{{location}}</p>
+    </div>
+  
+    <div class="contact">
+      <p>
+        Contact:</br>
+        {{contact.name}}</br>
+        {{contact.email}}
+      </p>
+    </div>
+    <p class="close" ng-click="close()">x</p>
+  </div>
+</script>

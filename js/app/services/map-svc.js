@@ -1,11 +1,10 @@
 Jump.Services.factory('mapService', [
     '$document', 
     '$http', 
-    'service.modal', 
     '$rootScope', 
     '$compile', 
     '$templateCache',
-    function ($document, $http, modalService, $rootScope, $compile, $templateCache) {
+    function ($document, $http, $rootScope, $compile, $templateCache) {
 
     var mapOptions = {
         center: new google.maps.LatLng(40.758635,-73.98468),
