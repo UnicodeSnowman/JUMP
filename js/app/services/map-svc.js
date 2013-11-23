@@ -1,5 +1,12 @@
-Jump.Services.factory('mapService', ['$document', '$http', function ($document, $http) {
-    
+Jump.Services.factory('mapService', [
+    '$document', 
+    '$http', 
+    'service.modal', 
+    '$rootScope', 
+    '$compile', 
+    '$templateCache',
+    function ($document, $http, modalService, $rootScope, $compile, $templateCache) {
+
     var mapOptions = {
         center: new google.maps.LatLng(40.758635,-73.98468),
         zoom: 14,
@@ -35,7 +42,35 @@ Jump.Services.factory('mapService', ['$document', '$http', function ($document, 
             });
 
             google.maps.event.addListener(marker, 'click', function (e) {
-                console.log('clicked the maahkah', this);
+                angular.element('.infoBox').remove();
+                var scope = $rootScope.$new();
+
+                scope.name = marker.data.name;
+                scope.location = marker.data.location.city + ', ' + marker.data.location.state;
+                scope.contact = {
+                    name: marker.data.contact,
+                    email: marker.data.email
+                };
+                scope.close = function () {
+                    angular.element('.infoBox').remove();
+                };
+
+                var templ = $templateCache.get('popupTemplate.html');
+                templ = angular.element(templ)[0].innerHTML;
+
+                content = angular.element(templ);
+                content = $compile(content)(scope);
+                
+                var popupOptions = {
+                    content: content[0],
+                    pixelOffset: new google.maps.Size(-280, 10)
+ 
+                };
+
+                var popup = new InfoBox(popupOptions);
+                scope.$apply(function () {
+                    popup.open(map, marker);
+                });
             });
 
             markers.push(marker);
@@ -43,9 +78,11 @@ Jump.Services.factory('mapService', ['$document', '$http', function ($document, 
         map.fitBounds(bounds);
     });
 
-    var _zoomTo = function (position) {
-        map.panTo(position);
-        map.setZoom(8);
+    var _zoomTo = function (marker) {
+        map.panTo(marker.position);
+        map.setZoom(10);
+        
+        //google.maps.event.trigger(marker, 'click');
     };
 
     return {
