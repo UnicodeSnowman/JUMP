@@ -10,7 +10,11 @@ angular.module('Jump', ['jump.controllers', 'jump.services', 'jump.directives', 
         
         $stateProvider
             .state('index', {
-                url: ''
+                url: '',
+                templateUrl: 'partials/main.html'
+            })
+            .state('map', {
+                url: '/map'
             })
             .state('about', {
                 url: '/about',

@@ -4,7 +4,8 @@ Jump.Services.factory('mapService', [
     '$rootScope', 
     '$compile', 
     '$templateCache',
-    function ($document, $http, $rootScope, $compile, $templateCache) {
+    '$state',
+    function ($document, $http, $rootScope, $compile, $templateCache, $state) {
 
     var mapOptions = {
         center: new google.maps.LatLng(40.758635,-73.98468),
@@ -69,6 +70,8 @@ Jump.Services.factory('mapService', [
                 var popup = new InfoBox(popupOptions);
                 scope.$apply(function () {
                     popup.open(map, marker);
+                    $state.transitionTo('map');
+                    //$state.
                 });
             });
 

@@ -1,7 +1,19 @@
 @font-face { 
-    font-family: TitlingGothic; 
-    src: url(TitlingGothicFBCond-Light.otf) format("opentype"); 
+    font-family: TitlingGothicRegular; 
+    src: url(TitlingGothicFBCond-Reg.otf) format("opentype"); 
 } 
+
+// titles
+@font-face { 
+    font-family: TitlingGothicMedium; 
+    src: url(TitlingGothicFBCond-Med.otf) format("opentype"); 
+} 
+
+// body text
+@font-face {
+    font-family: TitlingGothicNarrow;
+    src: url(TitlingGothicFbNar-Reg.otf) format("opentype")
+}
 
 .top-bar {
     height: 100px;
@@ -11,6 +23,11 @@
     position: fixed;
     width: 100%;
     z-index: 9999;
+    font-family: TitlingGothicRegular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.top-bar h1 {
+    font-family: TitlingGothicRegular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 .top-bar ul {
@@ -34,8 +51,12 @@
 }
 
 .top-bar ul.right a:hover {
-    //text-decoration: underline;
+    text-decoration: underline;
     background: #231f20;
+}
+
+.top-bar-section .left li h1 a {
+    font-size: 34px;
 }
 
 .top-bar-section .right li {
@@ -44,6 +65,10 @@
 
 .top-bar-section li a:not(.button):hover {
     background: #231f20;
+}
+
+.link-with-arrow a {
+    text-decoration: underline;
 }
 
 .link-with-arrow:hover {
@@ -68,7 +93,14 @@
 
 body {
     color: white;
-    font-family: TitlingGothic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: TitlingGothicNarrow, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    //font-size: 15px;
+    line-height: 22px;
+}
+
+body label {
+    color: white;
+    font-family: TitlingGothicMedium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 body a {
@@ -90,11 +122,11 @@ body li {
     top: 100px;
     right: 60px;
     width: 400px;
-    height: 500px;
+    //height: 500px;
     padding: 20px;
     opacity: 0.85;
     color: white;
-    //overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 .modal .teams {
@@ -105,10 +137,28 @@ body li {
 .modal .exit {
     position: absolute;
     right: 10px;
+    bottom: -15px;
 }
 
-.modal .form {
+.modal.left {
+    top: 100px;
+    left: 38px;
+}
 
+.modal .about {
+    //overflow-y: scroll;
+}
+
+.modal .about .exit {
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+}
+
+.modal .contact .exit {
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
 }
 
 .modal .form label {
@@ -131,23 +181,17 @@ body li {
     padding-bottom: 10px;
 }
 
-.modal .teams .team:hover {
+.modal .teams .name:hover {
     cursor: pointer;
     opacity: 0.5;
 }
 
-.modal .teams .team .name{
-    font-size: 18px;
-    line-height: 26px;
-}
-
-.modal .teams .team .location{
-    font-size: 16px;
-    line-height: 24px;
+.modal .teams .team .name {
+    line-height: 1em;
 }
 
 .infoBox {
-    font-family: TitlingGothic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: TitlingGothicRegular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     background: #231f20;
     opacity: 0.85;
     width: 300px;
@@ -155,14 +199,14 @@ body li {
 }
 
 .infoBox h1 {
-    font-family: TitlingGothic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: TitlingGothicRegular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 1.6875em;
     color: white;
     margin: 0px;
 }
 
 .infoBox p {
-    font-family: TitlingGothic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: TitlingGothicRegular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 1.3em;
     margin-bottom: 3px;
 }

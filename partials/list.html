@@ -6,11 +6,11 @@
     <hr>
     <div class="teams">
       <div class="team" ng-click="listCtrl.centerMap(team)" ng-repeat="team in teams | filter:searchText">
-        <li class="name">{{team.name}}</li>
+        <label class="name">{{team.name}}</label>
         <li class="location">{{team.location.city}}, {{team.location.state}}</li>
       </div>
     </div>
   </div>
 
-  <p class="exit"><a href="#">x</a></p>
+  <p class="exit"><a ui-sref="map">x</a></p>
 </div>
