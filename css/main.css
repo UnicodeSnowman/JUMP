@@ -45,7 +45,7 @@
 }
 
 .top-bar ul.right a {
-    padding-right: 70px;
+    padding-right: 50px;
     background: #231f20;
     font-size: 20px;
 }
@@ -94,13 +94,13 @@
 body {
     color: white;
     font-family: TitlingGothicNarrow, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    //font-size: 15px;
-    line-height: 22px;
+    line-height: 20px;
 }
 
 body label {
     color: white;
     font-family: TitlingGothicMedium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 16px;
 }
 
 body a {
@@ -120,7 +120,7 @@ body li {
     position: fixed;
     z-index: 999;
     top: 100px;
-    right: 60px;
+    right: 20px;
     width: 400px;
     //height: 500px;
     padding: 20px;
@@ -129,9 +129,14 @@ body li {
     overflow-y: scroll;
 }
 
+.modal a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .modal .teams {
     overflow-y: scroll;
-    height: 380px;
+    height: 600px;
 }
 
 .modal .exit {
@@ -141,13 +146,16 @@ body li {
 }
 
 .modal.left {
+    width: 550px;
     top: 100px;
     left: 38px;
 }
 
 .modal .about {
-    //overflow-y: scroll;
+    overflow-y: scroll;
+    height: 600px;
 }
+
 
 .modal .about .exit {
     position: absolute;
@@ -178,43 +186,41 @@ body li {
 }
 
 .modal .teams .team {
-    padding-bottom: 10px;
-}
-
-.modal .teams .name:hover {
-    cursor: pointer;
-    opacity: 0.5;
+    padding-bottom: 15px;
 }
 
 .modal .teams .team .name {
     line-height: 1em;
 }
 
-.infoBox {
-    font-family: TitlingGothicRegular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+div.infoBox {
+    font-family: TitlingGothicNarrow, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     background: #231f20;
     opacity: 0.85;
     width: 300px;
-    padding: 0 10px 10px 10px
+    font-size: 15px;
+    padding: 0 10px 20px 10px
 }
 
-.infoBox h1 {
-    font-family: TitlingGothicRegular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 1.6875em;
-    color: white;
-    margin: 0px;
+.infoBox label {
+    font-size: 15px;
+    font-family: TitlingGothicMedium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    margin-bottom: 3px;
+    font-size: 16px;
 }
 
 .infoBox p {
-    font-family: TitlingGothicRegular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 1.3em;
-    margin-bottom: 3px;
+    font-size: 15px;
+}
+
+.infoBox li {
+    font-size: 15px;
 }
 
 .infoBox .close {
     position: absolute;
     right: 10px;
-    bottom: 0px;
+    bottom: -15px;
     cursor: pointer;
 }
 
@@ -223,7 +229,7 @@ body li {
 }
 
 .infoBox .main {
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
 .infoBox:before {
@@ -234,5 +240,5 @@ body li {
     z-index: 9999;
     content: '';
     right: -253px;
-    top: -22px;
+    top: -28px;
 }

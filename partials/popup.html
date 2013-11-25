@@ -1,16 +1,15 @@
 <script type="text/ng-template" id="popupTemplate.html">
   <div class="infobox-wrapper">
     <div class="main">
-      <h1>{{name}}</h1>
+      <label>{{name}}</label>
       <p>{{location}}</p>
     </div>
   
     <div class="contact">
-      <p>
-        Contact:</br>
-        {{contact.name}}</br>
-        {{contact.email}}
-      </p>
+        <li>Contact:</li>
+        <li>{{contact.name}}</li>
+        <li>{{contact.email}}</li>
+        <li>{{contact.tel}}</li>
     </div>
     <p class="close" ng-click="close()">x</p>
   </div>

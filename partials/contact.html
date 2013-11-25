@@ -1,19 +1,33 @@
 <div class="modal">
-  <form class="form contact" name="form" ng-controller="ContactCtrl as contactCtrl">
-    <label>Name</label>
-    <input type="text" ng-model="contact.name" required>
+  <p>
+    For more information about J.U.M.P. please contact:
+  </p>
 
-    <label>Email</label>
-    <input type="email" ng-model="contact.email" required>
+  <li>
+    Pam Evans, Head Coach
+  </li>
+  <li>
+    <a href="mailto:messageforpam@gmail.com">messageforpam@gmail.com</a>
+  </li>
+  <li>
+    +1 440 572 3292
+  </li>
 
-    <label>Phone</label>
-    <input type="tel" ng-model="contact.phone">
+  <br>
+  
+  <p>
+    To learn more about how to get involved in the sport of Jump Rope, check the List View of teams to find a jump rope team closest to you. You can also find out more by visiting the websites of domestic and international Jump Rope organizations:
+  </p>
 
-    <label>Message</label>
-    <textarea ng-model="contact.message"></textarea>
+  <label>DOMESTIC</label>
+  <li><a href="http://www.aaujumprope.org/">AAU Jump Rope</a></li>
+  <li><a href="http://www.nationaldoubledutchleague.com/">National Double Dutch League</a></li>
+  <li><a href="http://usajumprope.org/">USA Jump Rope</a></li>
 
-    <input ng-click="contactCtrl.submit(form.$valid)" type="submit" value="Send">
+  <br>
+  
 
-    <p class="exit"><a ui-sref="map">x</a></p>
-  </form>
+  <label>INTERNATIONAL</label>
+  <li><a href="http://www.fisac-irsf.erso.info/">International Rope Skipping Federation</a></li>
+  <li><a href="http://worldjumprope.org/">World Jump Rope</a></li>
 </div>

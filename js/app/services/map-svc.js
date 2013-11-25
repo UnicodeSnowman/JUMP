@@ -23,6 +23,7 @@ Jump.Services.factory('mapService', [
     map = new google.maps.Map($document[0].getElementById('map'), mapOptions);
 
     var markers = [];
+    var scope = $rootScope.$new();
 
     // TO DO:
     // break out request into team-svc...
@@ -42,17 +43,25 @@ Jump.Services.factory('mapService', [
             });
 
             google.maps.event.addListener(marker, 'click', function (e) {
-                angular.element('.infoBox').remove();
-                var scope = $rootScope.$new();
 
-                scope.name = marker.data.name;
+                markers.forEach(function (marker) {
+                    marker.setIcon('img/marker.png');
+                });
+
+                angular.element('.infoBox').remove();
+
+                this.setIcon('img/marker_blue.png');
+
+                scope.name = marker.data.name.toUpperCase();
                 scope.location = marker.data.location.city + ', ' + marker.data.location.state;
                 scope.contact = {
                     name: marker.data.contact,
-                    email: marker.data.email
+                    email: marker.data.email,
+                    tel: marker.data.phone
                 };
                 scope.close = function () {
                     angular.element('.infoBox').remove();
+                    marker.setIcon('img/marker.png');
                 };
 
                 var templ = $templateCache.get('popupTemplate.html');
@@ -68,11 +77,15 @@ Jump.Services.factory('mapService', [
                 };
 
                 var popup = new InfoBox(popupOptions);
-                scope.$apply(function () {
-                    popup.open(map, marker);
-                    $state.transitionTo('map');
-                    //$state.
-                });
+                window.setTimeout(function () {
+                    scope.$apply(function () {
+                        popup.open(map, marker);
+                        if ($state.current.name === 'index') {
+                            $state.transitionTo('map');
+                        }
+                        
+                    });
+                }, 0);
             });
 
             markers.push(marker);
@@ -84,7 +97,10 @@ Jump.Services.factory('mapService', [
         map.panTo(marker.position);
         map.setZoom(10);
         
-        //google.maps.event.trigger(marker, 'click');
+        var mkr = _.find(markers, function (m) {
+            return m.title.toLowerCase() == marker.name.toLowerCase();
+        });
+        google.maps.event.trigger(mkr, 'click');
     };
 
     return {
