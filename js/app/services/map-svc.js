@@ -57,7 +57,8 @@ Jump.Services.factory('mapService', [
                 scope.contact = {
                     name: marker.data.contact,
                     email: marker.data.email,
-                    tel: marker.data.phone
+                    tel: marker.data.phone,
+                    url: marker.data.url
                 };
                 scope.close = function () {
                     angular.element('.infoBox').remove();

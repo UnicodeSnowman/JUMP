@@ -8,8 +8,9 @@
     <div class="contact">
         <li>Contact:</li>
         <li>{{contact.name}}</li>
-        <li>{{contact.email}}</li>
+        <li><a href="mailTo:{{contact.emailT}">{{contact.email}}</a></li>
         <li>{{contact.tel}}</li>
+        <li><a href="http://{{contact.url}}">{{contact.url}}</a></li>
     </div>
     <p class="close" ng-click="close()">x</p>
   </div>

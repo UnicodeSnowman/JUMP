@@ -3,7 +3,7 @@
     src: url(TitlingGothicFBCond-Reg.otf) format("opentype"); 
 } 
 
-// titles
+// body titles
 @font-face { 
     font-family: TitlingGothicMedium; 
     src: url(TitlingGothicFBCond-Med.otf) format("opentype"); 
@@ -12,7 +12,7 @@
 // body text
 @font-face {
     font-family: TitlingGothicNarrow;
-    src: url(TitlingGothicFbNar-Reg.otf) format("opentype")
+    src: url(TitlingGothicFBNar-Reg.otf) format("opentype")
 }
 
 .top-bar {
@@ -139,6 +139,11 @@ body li {
     height: 600px;
 }
 
+.modal .team .name:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .modal .exit {
     position: absolute;
     right: 10px;
@@ -207,6 +212,15 @@ div.infoBox {
     font-family: TitlingGothicMedium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     margin-bottom: 3px;
     font-size: 16px;
+}
+
+.infoBox a {
+    font-size: 15px;
+}
+
+.infoBox a:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 .infoBox p {
