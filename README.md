@@ -1,4 +1,4 @@
 JUMP
 ====
 
-Source for www.jumpmacysparade.com, built with AngularJS
+Source for www.jumpmacysparade.com, built with AngularJS + ui-router
